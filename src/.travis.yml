@@ -1,11 +1,11 @@
 sudo: required
 services:
-    - docker
+  - docker
 
 # before install gonna have a series of cmds
 # executed b4 our tests are ran
 before_install:
-    - docker build -t znoori455/docker-react -f Dockerfile.dev .
+  - docker build -t znoori455/docker-react -f Dockerfile.dev .
 
 # script section contains all the diff cmds
 # that need to be executed to actually run our test suite
